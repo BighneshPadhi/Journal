@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Journal</h1>
+        </header>
+
+        <div class="input-container">
+            <input type="date" id="entryDate" />
+            <textarea id="entryContent" placeholder="What's on your mind?" rows="4"></textarea>
+            <input type="text" id="entryTags" placeholder="Tags (comma separated)" />
+            <select id="entryMood">
+                <option value="happy">😊 Happy</option>
+                <option value="sad">😢 Sad</option>
+                <option value="neutral">😐 Neutral</option>
+                <option value="excited">🎉 Excited</option>
+            </select>
+            <button id="saveButton">Save Entry</button>
+        </div>
+
+        <div class="journal-container">
+            <h2>Journal Entries</h2>
+            <ul id="journalEntries" class="journal-entries"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
